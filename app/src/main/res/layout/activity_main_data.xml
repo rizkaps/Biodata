@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#e2cdbc"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="BIODATA"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"/>
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rizka Purmaya Sari"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TTL: Pasuruan, 17 Maret 1998"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat: Jl. Penataan No 26 Pasuruan"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status : Mahasiswa"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jurusan: Teknologi Informasi"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/text9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prodi: D4 Teknik Informatika"
+        android:textSize="20sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/hal1"
+            android:onClick="Profil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#917661"
+            android:text="Halaman Utama"
+            android:layout_gravity="center_horizontal">
+        </Button>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="4">
+
+        <ImageButton
+            android:id="@+id/gmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:onClick="gmail"
+            android:scaleType="fitCenter"
+            android:src="@drawable/gmail" />
+
+        <ImageButton
+            android:id="@+id/instagram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="250dp"
+            android:layout_marginTop="10dp"
+            android:onClick="ig"
+            android:scaleType="centerInside"
+            android:src="@drawable/ig" />
+
+        <!--<ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitCenter"
+            android:id="@+id/wa"
+            android:src="@drawable/wa"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="190dp"
+            android:onClick="wa"/>-->
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+

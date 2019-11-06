@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Liner layout adalah:....-->
+<!--Liner layout adalah: memiliki panjang yang sama dengan parent/layar-->
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#abbbf2"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/bb"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_weight="0.5"
+        android:layout_height="1dp"
+        android:text="TUGAS 1"
+        android:textColor="#315082"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_weight="0.3"
+        android:layout_height="1dp"
+        android:textAlignment="center"
+        android:text="PEMROGRAMAN ANDROID"
+        android:textColor="#222222"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+    <TextView
+        android:id="@+id/isiText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="15sp"
+        android:textColor="#222222"/>
+
+    <!--didalam Liner Layout ini nanti kita akan memberikan objek - objek lainnya-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnprofil"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="2"
+            android:background="#e4b5f2"
+            android:onClick="Profil"
+            android:text="PROFIL" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="#9181c6"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="NILAI"
+            android:onClick="Nilai"
+            android:id="@+id/btnnilai"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#9bc681"
+            android:text="MOTO"
+            android:onClick="Motto"
+            android:id="@+id/btnmotto"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:layout_alignParentBottom="true"/>
+
+</LinearLayout>
